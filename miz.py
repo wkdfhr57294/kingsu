@@ -1,6 +1,6 @@
 import discord  
 client = discord.Client()
-import youtube_dl
+import os
 
 
 @client.event
@@ -30,5 +30,5 @@ async def on_message(message):
 
 
 
-    
-client.run("ODg1OTE3MjM5ODc2OTIzMzky.YTuAuQ.81l-ikcXdeg5f-wlqEuAUTKl5qU")
+access_token=os.environ["BOT_TOKEN"]
+client.run(acces_token)
